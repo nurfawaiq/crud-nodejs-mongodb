@@ -12,7 +12,7 @@ app.use('/bower', express.static(path.join(__dirname, './bower_components')));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
-	extented: true
+	extended: true
 }));
 
 mongo.connect('mongodb://localhost:27017/crud-nodejs', function(err, db) {
