@@ -1,8 +1,9 @@
 function welcomeorakanggo(db) {
 	const shortid = require('shortid');
 	const books = db.collection('book');
+	
 	this.index = function(req,res,next) {
-		res.send('selamat datang');
+		res.render('home');
 	}
 
 	this.book = function(req,res,next) {
