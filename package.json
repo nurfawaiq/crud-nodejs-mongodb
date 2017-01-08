@@ -1,0 +1,26 @@
+{
+  "name": "crud-nodejs-mongodb",
+  "version": "1.0.0",
+  "description": "Learning CRUD Data Using Node.js & MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nurfawaiq/crud-nodejs.git"
+  },
+  "author": "nurfawaiq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nurfawaiq/crud-nodejs/issues"
+  },
+  "homepage": "https://github.com/nurfawaiq/crud-nodejs#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.19",
+    "pug": "^2.0.0-beta6",
+    "shortid": "^2.2.6"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "crud-nodejs-mongodb",
+  "description": "Learning CRUD Data Using Node.js & MongoDB",
+  "main": "index.js",
+  "authors": [
+    "nurfawaiq"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nurfawaiq/crud-nodejs",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

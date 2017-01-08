@@ -1,0 +1,57 @@
+extends index
+block content
+	div.container
+		div.row
+			div.col-lg-12
+				if param=='view'
+					a(href="/book/add")
+						button.btn.btn-success Add
+					table.table.table-striped
+						thead
+							tr
+								th #
+								th Book Title
+								th Author
+								th Book Type
+								th Option
+						tbody
+							-var no = 1
+							each row in data
+								tr
+									td= no++ +'.'
+									td= row.title
+									td= row.author
+									td= row.book_type
+									td
+										a(href="/book/edit/"+row._id)
+											button.btn.btn-primary.btn-xs Edit
+										| 
+										a(href="/book/del/"+row._id, onclick="return confirm('Yakin akan menghapus data?')")
+											button.btn.btn-danger.btn-xs Delete
+				if param=='add'
+					form(action="" method="post")
+						div.form-group
+							label Title
+							input(type="text" name="title").form-control
+						div.form-group
+							label Author
+							input(type="text" name="author").form-control
+						div.form-group
+							label Book Type
+							input(type="text" name="book_type").form-control
+						div.form-group
+							button(type="submit").btn.btn-success Save
+
+				if param=='edit'
+					form(action="" method="post")
+						div.form-group
+							label Title
+							input(type="text" name="title" value=data.title).form-control
+						div.form-group
+							label Author
+							input(type="text" name="author" value=data.author).form-control
+						div.form-group
+							label Book Type
+							input(type="text" name="book_type" value=data.book_type).form-control
+						div.form-group
+							button(type="submit").btn.btn-success Save
